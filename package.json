@@ -1,0 +1,14 @@
+{
+  "name": "get-words",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "get-words": "node script.js"
+  },
+  "author": "eriaht",
+  "license": "ISC",
+  "dependencies": {
+    "node-html-parser": "^6.1.12"
+  }
+}

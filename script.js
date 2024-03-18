@@ -22,7 +22,7 @@ const getHTML = async (vocabUrl) => {
       }
     );
   } catch (error) {
-    console.error(error);
+    throw error;
   }
 };
 

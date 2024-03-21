@@ -16,6 +16,7 @@ const getHTML = async (vocabUrl) => {
     throw error;
   }
 };
+
 /*
   Parse the provided HTML, then store all the vocabulary words in a text file
   called words.txt. This file is stored in the directory the script is executed in.
@@ -30,7 +31,6 @@ const parseHTML = (html) => {
     flags: "w",
   });
   // Write each word to the text file
-  let line = 15;
   words.forEach((word, i) => {
     // Write word
     logger.write(`${word.text}\n`);
@@ -39,6 +39,7 @@ const parseHTML = (html) => {
   logger.end();
 };
 
+// Main
 const main = async (args) => {
   try {
     // Get HTML
@@ -59,4 +60,5 @@ const main = async (args) => {
   }
 };
 
+// Execute main
 main(process.argv);
